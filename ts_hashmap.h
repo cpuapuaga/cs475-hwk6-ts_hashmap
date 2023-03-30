@@ -1,5 +1,6 @@
 #include <pthread.h>
 
+
 // A hashmap entry stores the key, value
 // and a pointer to the next entry
 typedef struct ts_entry_t {
@@ -23,3 +24,4 @@ int put(ts_hashmap_t *map, int key, int value);
 int del(ts_hashmap_t *map, int key);
 double lf(ts_hashmap_t *map);
 void printmap(ts_hashmap_t *map);
+void destroy();
